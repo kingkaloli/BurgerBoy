@@ -1,0 +1,27 @@
+{
+  "name": "burgerboy",
+  "version": "1.0.0",
+  "description": "Burger Boy App",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingkaloli/BurgerBoy.git"
+  },
+  "author": "Riley King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingkaloli/BurgerBoy/issues"
+  },
+  "homepage": "https://github.com/kingkaloli/BurgerBoy#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "method-override": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
