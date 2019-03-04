@@ -1,3 +1,4 @@
+require ('dotenv').config()
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -8,7 +9,10 @@ var connection = mysql.createConnection({
 
     connection.connect(function(err) {
     if (err)throw err;
-    console.log('connected as id ' + connection.threadId);
+   
     
     });
-mudule.exports = connection;
+    module.exports  = connection;
+
+    // password: process.env.password,
+

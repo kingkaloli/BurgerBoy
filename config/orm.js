@@ -8,3 +8,4 @@ all: function(tableInput, cb){
    })
  }
 }
+module.exports = orm;
