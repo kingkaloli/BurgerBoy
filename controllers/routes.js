@@ -21,6 +21,13 @@ router.put('/burgers/update', function (reg, res) {
 
 });
 
+router.post('/burgers/create', function (reg, res) {
+    burger.create(reg.body.burger_name, function(result){
+        res.redirect('/');
+
+})
+
+})
 
 
 module.exports = router;
