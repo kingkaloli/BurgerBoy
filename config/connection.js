@@ -4,8 +4,7 @@ var connection;
 
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
-  process.env.PORT || config.httpPort;
-} else {
+  } else {
     connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
