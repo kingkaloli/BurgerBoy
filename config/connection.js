@@ -4,6 +4,7 @@ var connection;
 
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
+  process.env.PORT || config.httpPort;
 } else {
     connection = mysql.createConnection({
     host: 'localhost',
@@ -21,5 +22,6 @@ connection.connect(function (err) {
 });
 
 module.exports = connection;
+
 
 // password: process.env.password,
